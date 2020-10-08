@@ -1,8 +1,16 @@
 <html>
 <head>
   <title>Cirno-baka's Blog</title>
+  <style type="text/css">
+  body 
+  {
+    background-image:url(/pic/C.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed
+    background-position:center;
+  }
+</style>
  </head>
-<body background="/pic/C.jpg" width="100%" height="100%">
   <h1>MUSIC</h1>
   <p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=913908853&auto=1&height=430"></iframe></p>
   <h1>PICTURES</h1>
