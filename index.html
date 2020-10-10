@@ -2,6 +2,12 @@
 <head>
   <title>Cirno-baka's Blog</title>
   <style type="text/css">
+  div.pos_abs
+  {
+    position:absolute;
+    left:332px;
+   top:233px
+  }
   body 
   {
     background-image:url(/pic/C.jpg);
@@ -18,13 +24,31 @@
   }
   a:hover {border-color: blue;}
   </style>
+  <script>
+  function VideoCreate()
+	{
+		var video=document.getElementById("video").value;
+	  document.getElementById("div_video").innerHTML='<video controls="controls" height="114px" src="'+video+'"></video>';
+	}
+  </script>
 </head>
 <body>
-  <div style="text-align:center;background-color:#66CCFF;color:#FFFFFF;position:fixed">
+  <div style="margin:0 233px;background-color:#66CCFF;color:#FFFFFF;position:fixed">
     <h1>Cirno_Baka's Blog</h1>
   </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
   <h2>MUSIC</h2>
   <p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=913908853&auto=1&height=430"></iframe></p>
+  <h2>NAVIGATION</h2>
+  <br />
+  <input type="text" id="video" placeholder="Video Address..."  style="width:514px" />
+  <br />
+  <div><button type="button" onclick="VideoCreate()">Go</button></div>
+  <div class="pos_abs" id="div_video" style="transform:rotate(270deg)"></div>
   <h2>PICTURES</h2>
   <div align="center">
     <img src="/pic/C2.jpg" width="746.628" height="1080"/>
