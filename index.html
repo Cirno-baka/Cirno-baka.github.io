@@ -40,6 +40,32 @@
     document.getElementById("div_video").innerHTML='<video controls="controls" height="114px" src="'+video+'"></video>';
   }
   </script>
+  <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+  <script type="text/javascript">
+  var a_idx = 0;
+  jQuery(document).ready(function($) {
+      $("body").click(function(e) {
+      var a = new Array("博丽灵梦", "雾雨魔理沙", "魅魔", "露米娅", "大妖精", "琪露诺", "红美玲", "小恶魔", "帕秋莉诺雷姬", "十六夜咲夜", "蕾米莉亚斯卡雷特", "芙兰朵露斯卡雷特");
+      var $i = $("<span/>").text(a[a_idx]);
+      a_idx = (a_idx + 1)% a.length;
+      var x = e.pageX, y = e.pageY;
+      $i.css({"z-index" : 1145141919810,
+          "top" : y - 20,
+          "left" : x,
+          "position" : "absolute",
+          "font-weight" : "bold",
+          "color" : "#66ccff"
+          });
+      $("body").append($i);
+          $i.animate({
+              "top" : y - 180,
+                  "opacity" : 0
+          }, 1500, function() {
+              $i.remove();
+          });
+      });
+  });
+  </script>
 </head>
 <body>
   <div class="he">
@@ -49,19 +75,6 @@
   <br />
   <br />
   <br />
-  <div align="center">
-    <img src='http://i2.tiimg.com/728737/033f507f572557c2.gif'/>
-  <br />
-    <img src='http://i1.fuimg.com/728737/d58c5316d047aa68.gif'/>
-  <br />
-    <img src='http://i1.fuimg.com/728737/b116dafeaa8c9bca.gif'/>
-  <br />
-    <img src='http://i1.fuimg.com/728737/80efd0cdfcf73406.gif'/>
-  <br />
-    <img src='http://i1.fuimg.com/728737/f6789d8ad595f91f.gif'/>
-  <br />
-    <img src='http://i1.fuimg.com/728737/60ec9973bf7251e5.gif'/>
-  </div>
   <br />
   <br />
   <br />
