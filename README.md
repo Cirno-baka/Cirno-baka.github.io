@@ -2,4 +2,4 @@
 
 Just my blog.
 
-visit it ![here](cirno-baka.github.io)
+visit it [here](cirno-baka.github.io).
